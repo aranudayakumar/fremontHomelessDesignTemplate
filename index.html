@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="static/css/screen.min.css">
     <link rel="stylesheet" href="static/css/custom.min.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.ts"></script>
   </head>
   <body>
     <!-- $Page header-->
@@ -50,94 +55,7 @@
       <a class="promo__go-next js-anchor" href="#portfolio">Scroll down</a>
     </section>
     <!-- $Portfolio section-->
-    <section class="portfolio js-portfolio" id="portfolio">
-      <div class="portfolio__inner">
-        <h2 class="portfolio__title">Portfolio</h2>
-        <p class="portfolio__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <nav class="portfolio__filter">
-          <ul>
-            <li class="portfolio__filter-btn is-selected js-filter" data-filter="all">All</li>
-            <li class="portfolio__filter-btn js-filter" data-filter="web">Web design</li>
-            <li class="portfolio__filter-btn js-filter" data-filter="graphic">Graphic design</li>
-            <li class="portfolio__filter-btn js-filter" data-filter="flat">Flat design</li>
-          </ul>
-        </nav>
-        <ul class="portfolio__content">
-          <li class="portfolio__item js-item" data-cat="all flat">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port1.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Flat design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all web">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port2.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Web design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all graphic">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port3.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Graphic design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all graphic web">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port4.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Graphic design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all graphic flat">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port6.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Flat design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all web">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port5.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Web design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all flat web">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port1.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Flat design</span>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item js-item" data-cat="all web">
-            <a href="#">
-              <img class="portfolio__item-img js-lazy" src="static/images/port2.png" alt="">
-              <div class="portfolio__item-caption">
-                <span class="portfolio__item-title">Example title</span>
-                <span class="portfolio__item-cat">Web design</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div id="map"></div>
     <!-- $Team section-->
     <section class="team" id="team">
       <div class="team__inner">
@@ -245,5 +163,17 @@
       </div>
     </footer>
     <script src="static/js/body.min.js"></script>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGIraCf9HYQ5UIEmSl34FkJNJY8_ZZAHU&callback=initMap&v=weekly"
+      defer
+    ></script>
+
   </body>
 </html>
