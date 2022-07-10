@@ -5,12 +5,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     -webkit-box-sizing:border-box;
     box-sizing:border-box
 }
+
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{
     display:block
 }
 nav ol,nav ul{
     list-style:none
 }
+
 blockquote,q{
     quotes:none
 }
@@ -54,7 +56,28 @@ body{
     background-color:#fff;
     font-family:"Lato",sans-serif;
     color:#424242
+
 }
+.menu {
+    position: fixed;
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.links {
+    color: rgb(3,4,3);
+    display: inline;
+    padding-left: 33px;
+    padding-right: 35px;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+
 .contact{
     width:100%;
     min-height:500px;
@@ -253,10 +276,10 @@ body{
     transition:background-color .2s;
     color:#424242
 }
-.page-header__nav-link:hover,.page-header__nav-link.is-active{
-    background-color:#1bbc9b;
-    color:#fff
-}
+    .page-header__nav-link:hover,.page-header__nav-link.is-active{
+        background-color:#1bbc9b;
+        color:#fff
+    }
 .page-footer{
     width:100%;
     min-height:85px;
@@ -305,8 +328,8 @@ body{
 }
 .portfolio{
     width:100%;
-    min-height:680px;
-    padding-top:50px;
+    min-height:0.25px;
+    padding-top:0.5px;
     background-color:#fff;
     text-align:center
 }
@@ -404,7 +427,7 @@ body{
     width:100%;
     min-height:455px;
     padding:70px 0;
-    background:#323232 url(../images/promo-bg.jpg) center 0 no-repeat;
+    background:#323232 url(../images/bg/homelessBanner_bg.jpg) center 0 no-repeat;
     background-attachment:fixed;
     -webkit-background-size:cover;
     background-size:cover;
@@ -424,26 +447,35 @@ body{
     margin-bottom:35px;
     font-size:55px;
     text-transform:capitalize
+    
+    
 }
 .promo__title span{
-    font-weight:700
+    font-weight:900
 }
 .promo__descr{
+    display:block;
+    width:580px;
+    height:100px;
+    margin:0 auto 45px;
+    padding-top:10px;
+    background-color:#e9f2f4;
     max-width:580px;
     margin:0 auto 50px;
-    font-size:18px;
+    font-size:20px;
+    font-weight: 500;
     line-height:1.1;
-    color:#fff
+    color:rgb(8, 9, 9)
 }
 .promo__btn{
     display:block;
     width:125px;
-    height:35px;
+    height:70px;
     margin:0 auto 45px;
     padding-top:10px;
-    background-color:#1bbc9b;
-    font-size:15px;
-    color:#fff;
+    background-color:#f0f3f4;
+    font-size:20px;
+    color:rgb(19, 18, 18);
     text-transform:uppercase;
     -webkit-transition:all .5s;
     -o-transition:all .5s;
@@ -738,4 +770,97 @@ body{
     .portfolio__filter li{
         display:block
     }
+    .square {
+        position: absolute;
+          top: 0;
+          margin-left: auto;
+          height: 200px;
+          width: 200px;
+          background: #f00;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+        }
+     .signinbutton {
+                background-color: #458af9;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                display: block;
+                font-size: 75px;
+                margin: 4px 2px;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 225px;
+            }
+            
+    .signinbutton:hover {
+                background-color: #a7acb7;
+            }
+            
+    .createaccbutton {
+                background-color: #458af9;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                display: block;
+                font-size: 75px;
+                margin: 4px 2px;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+            }
+            
+   .createaccbutton:hover {
+                background-color: #a7acb7;
+            }
+
+    
 }
+.moreInfo {
+    background-color: rgb(215, 224, 219);
+    color: #16a086;
+    height: 600px;
+    border-width: thick; 
+    border-color:#158f76;
+
+  }
+  .getInvolved {
+    background-color: white;
+    color: #16a086;
+    border: 2px #16a086;
+    height: 200x;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .box
+ {
+   display:block;
+    width:2000px;
+    height:1000x;
+    margin:0 auto 45px;
+    padding-top:1000px;
+    background-color:#221c5c;
+    max-width:2000px;
+    margin:0 auto 50px;
+    font-size:20px;
+    font-weight: 500;
+    line-height:1.1;
+    color:rgb(8, 8, 9)
+    
+
+ } 
+.moreInfoText {
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+
+}
+

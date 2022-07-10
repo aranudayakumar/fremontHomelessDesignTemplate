@@ -56,13 +56,13 @@ function initMap(): void {
   
   function makeMarker(latlong, num, descript) {
     let a = (makeid(Math.random()))
-    const image =
-    "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|FE6256|000000";
+   // const image =
+   // "http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=2|FE6256|000000";
      let markera = new google.maps.Marker({
       position: latlong,
       map,
       title: "Uluru (Ayers Rock)",
-      icon: image,
+    //  icon: image,
     });
     const infowindowa = new google.maps.InfoWindow({
     content: descript,
@@ -79,10 +79,10 @@ function initMap(): void {
     
   }
 
-  makeMarker({lat: 37.523953286038875, lng: -121.96698725564853}, 5, "decent amount of people by the irvington high school parking lot" )
-  makeMarker({lat: 37.53341057073052, lng: -121.95321382951938}, 5, "decent amount of people near the bart passing" )
+  makeMarker({lat: 37.523953286038875, lng: -121.96698725564853}, 5, " Four individuals by the irvington high school parking lot" )
+  makeMarker({lat: 37.53341057073052, lng: -121.95321382951938}, 5, "25-30 people near the bart passing" )
   makeMarker({lat: 37.55100951060943, lng: -121.9709038006832}, 5, "four people close to the library" )
-  makeMarker({lat: 37.55194483352864, lng: -121.98038276158498}, 5, "a few people near fremont hospital" )
+  makeMarker({lat: 37.55194483352864, lng: -121.98038276158498}, 5, "three people near fremont hospital" )
   makeMarker({lat: 37.5397165172171, lng: -121.92313430253309}, 5, "a person in the parking lot near McDonalds" )
   makeMarker({lat: 37.53199085835369, lng: -121.9596967890404}, 5, "an individual right outside of Apna Bazar" )
 

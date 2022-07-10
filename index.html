@@ -22,119 +22,36 @@
     <script type="module" src="./index.ts"></script>
   </head>
   <body>
+    <center>
+  <ul class="menu"> 
+    <li class="links"> <a href="#home">Home</a></li>
+    <li class="links"> <a href="#portfolio">Map</a></li>
+    <li class="links"> <a href="#contact">Report</a></li>
+    <li class="links"> <a href="#moreInfo">More Info</a></li>
+    <li class="links"> <a href="#getInvolved">Get Involved</a></li>
+    <li class="links"> <a href="#team">About Us</a></li>
+  </ul>
+    </center>
     <!-- $Page header-->
-    <header class="page-header js-header">
-      <div class="page-header__inner">
-        <div class="page-header__logo">
-          <h1>Bak-one</h1>&nbsp; <span>One page flat template</span>
-        </div>
-        <nav class="page-header__nav js-nav">
-          <ul>
-            <li>
-              <a class="page-header__nav-link js-anchor js-link is-active" href="#home">Home</a>
-            </li>
-            <li>
-              <a class="page-header__nav-link js-anchor js-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a class="page-header__nav-link js-anchor js-link" href="#team">About</a>
-            </li>
-            <li>
-              <a class="page-header__nav-link js-anchor js-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    
     <!-- $Promo section-->
     <section class="promo js-jumbo" id="home">
-      <h2 class="promo__title">We build <span>brand</span>
+      <h2 class="promo__title">We help the <span>homeless</span>
       </h2>
-      <p class="promo__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-      <a class="promo__btn" href="#">Learn more</a>
+      <p class="promo__descr"> This organization spreads awareness about the rising homeless population in Fremont & hosts drives to fulfill their esssential needs. Our website features a google maps tracker which offers real time locations and info about these individuals.  </p>
+      <a class="promo__btn" href="#">Homeless Tracker</a>
       <a class="promo__go-next js-anchor" href="#portfolio">Scroll down</a>
     </section>
     <!-- $Portfolio section-->
-    <div id="map"></div>
-    <!-- $Team section-->
-    <section class="team" id="team">
-      <div class="team__inner">
-        <h2 class="team__title">About us</h2>
-        <p class="team__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div class="team__member">
-          <img src="static/images/ava1.jpg" alt="Melanie Doe">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Melannie Doe</h3>
-            <span class="team__member-role">Project manager</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li>
-              <a class="team__member-icon fb" href="#">My Facebook</a>
-            </li>
-            <li>
-              <a class="team__member-icon tw" href="#">Follow me on twitter</a>
-            </li>
-            <li>
-              <a class="team__member-icon gplus" href="#">My Google+</a>
-            </li>
-            <li>
-              <a class="team__member-icon db" href="#">I am on Dribble</a>
-            </li>
-          </ul>
-        </div>
-        <div class="team__member">
-          <img src="static/images/ava2.jpg" alt="Jhonie Doe">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Jhonnie Doe</h3>
-            <span class="team__member-role">Graphic designer</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li>
-              <a class="team__member-icon fb" href="#">My Facebook</a>
-            </li>
-            <li>
-              <a class="team__member-icon tw" href="#">Follow me on twitter</a>
-            </li>
-            <li>
-              <a class="team__member-icon gplus" href="#">My Google+</a>
-            </li>
-            <li>
-              <a class="team__member-icon db" href="#">I am on Dribble</a>
-            </li>
-          </ul>
-        </div>
-        <div class="team__member">
-          <img src="static/images/ava3.jpg" alt="Daniel Doe">
-          <div class="team__member-info">
-            <h3 class="team__member-name">Daniel Doe</h3>
-            <span class="team__member-role">Web designer</span>
-            <p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <ul class="team__member-soc">
-            <li>
-              <a class="team__member-icon fb" href="#">My Facebook</a>
-            </li>
-            <li>
-              <a class="team__member-icon tw" href="#">Follow me on twitter</a>
-            </li>
-            <li>
-              <a class="team__member-icon gplus" href="#">My Google+</a>
-            </li>
-            <li>
-              <a class="team__member-icon db" href="#">I am on Dribble</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- $Contact section-->
-    <section class="contact" id="contact">
+    <section class="portfolio js-portfolio" id="portfolio"></section>
+    <div id="map"></div>  
+    
+     <!-- $Contact section-->
+     <section class="contact" id="contact">
       <div class="contact__inner">
-        <h2 class="contact__title">Contact us</h2>
-        <p class="contact__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <form class="contact__form" action="#" method="post">
+        <h2 class="contact__title">Report Homeless Persons</h2>
+
+        <form class="contact__form" action="https://formsubmit.co/31167f3a120060afb5579a3a546cb741  " method="post">
           <input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name">
           <input class="contact__form-input" id="email" type="email" name="email" placeholder="Your email">
           <textarea class="contact__form-tarea" id="message" name="message" placeholder="Your message"></textarea>
@@ -143,26 +60,98 @@
         <div class="contact__card vcard">
           <h3 class="contact__card-title">Information</h3>
           <div class="contact__card-item place">
-            <div class="fn org">Bak-One Company</div>
+            <div class="fn org"></div>
             <div class="adr">
-              <div class="street-address">12345 Hollywood Bvld Street</div>
-              <span class="locality">Los Angeles</span>, <span class="region">California</span>
+              <div class="street-address">Mission Hills</div>
+              <span class="locality">Fremont</span>, <span class="region">California</span>
             </div>
           </div>
-          <div class="contact__card-item tel">+444 <span class="type">&nbsp;(Phone)&nbsp;</span>123456 </div>
-          <div class="contact__card-item fax tel">+123 <span class="type">&nbsp;(FAX)&nbsp;</span>0011223 </div>
-          <a class="contact__card-item email" href="#">info@companyname.com</a>
+       
+          <a class="contact__card-item email" href="#">aranuday@gmail.com</a>
         </div>
       </div>
     </section>
-    <!-- $Page footer-->
-    <footer class="page-footer">
-      <div class="page-footer__inner">
-        <span class="page-footer__copyright">&copy; Copyright 2013 Bak-One | One Page Flat Template</span>
-        <a class="page-footer__gotop js-anchor" href="#home">Go to top</a>
+
+    
+    <section class="moreInfo" id="moreInfo">
+      <h2 class="promo__title">More <span>Info</span>
+      </h2>
+      <center>
+        <p class="moreInfoText"> 
+          The Bay Area’s homeless population is at 35,118 and accounts for more than a quarter of the growth in the total U.S. homeless population.  
+           </p>
+          <br><br>
+        <p class="moreInfoText">
+          Alameda County contains 9,747 people, which is up 22% from three years ago.
+        </p>
+        <br> <br> 
+
+        <p class="moreInfoText">
+          The bay area is the third leading location in America for homelesness, behind LA and the NYC area. 
+        </p>
+        <br><br>
+        <p class="moreInfoText">
+          Even though California contains 12 % of the USA's population, it has 24 percent of the country's homeless.
+        </p>
+        <br><br>
+        <p class="moreInfoText">
+          Homelesness has risen by 7 percent in California since 2020.  
+        </p>
+      
+    </center>
+    </section>
+     
+    <section class="getInvolved" id="getInvolved">
+      <h2 class="promo__title">Get <span>Involved</span>
+      </h2>
+      <p class="moreInfoText">
+       We will be hosting a clothing drive on the weekend of 7/24 - 7/25. Stay tuned for more details.
+      </p>
+    </section>
+      
+    
+  
+     
+
+
+    <!-- $Team section-->
+    <section class="team" id="team">
+      <div class="team__inner">
+        <h2 class="team__title">About us</h2>
+       
+        <div class="team__member">
+          <img src="static/images/ava1.jpg" alt="Melanie Doe" height = 235px>
+          <div class="team__member-info">
+            <h3 class="team__member-name">Kavin Mohan</h3>
+            <span class="team__member-role"></span>
+            <p class="team__member-descr">I am an incoming college freshman at Urbana-Champaign for computer science. I am interested in applying my CS skills to help the homelessness issue.</p>
+          </div>
+          
+        </div>
+        <div class="team__member">
+          <img src="static/images/ava2.jpg" alt="Jhonnie Doe" height = 235px>
+          
+          <div class="team__member-info">
+            <h3 class="team__member-name">Aran Udayakumar</h3>
+            <span class="team__member-role"></span>
+            <p class="team__member-descr"> I am a rising high school senior at Moreau Catholic High School who is passionate about CS and helping homelessness and created this project to help the community. </p>
+          </div>
+          
+        </div>
+        <div class="team__member">
+          <img src="static/images/ava3.jpg" alt="Daniel Doe" height = 235px>
+          <div class="team__member-info">
+            <h3 class="team__member-name">Anthara Tirupati</h3>
+            <span class="team__member-role"></span>
+            <p class="team__member-descr">I am an incoming high school senior who is intrigued by the recent increase in homelessness and I contributed to this project to help address this issue.</p>
+          </div>
+          
+        </div>
       </div>
-    </footer>
-    <script src="static/js/body.min.js"></script>
+    </section>
+   
+    <!-- $Page footer-->
+   
 
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
@@ -171,9 +160,41 @@
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGIraCf9HYQ5UIEmSl34FkJNJY8_ZZAHU&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?=&callback=initMap&v=weekly"
       defer
     ></script>
+
+    <script>
+      function scrollWin() {
+        window.scrollBy(0, 0);
+      }
+      </script>
+    <script>
+      function scrollWin2() {
+        window.scrollBy(0, 630);
+      }
+      </script>
+    <script>
+      function scrollWin3() {
+        window.scrollBy(0, 100);
+      }
+      </script>
+    <script>
+      function scrollWin4() {
+        window.scrollBy(0, 100);
+      }
+      </script>    
+    <script>
+      function scrollWin5() {
+        window.scrollBy(0, 100);
+      }
+      </script>
+    <script>
+        function scrollWin6() {
+          window.scrollBy(0, 100);
+        }
+      </script>
+    
 
   </body>
 </html>
